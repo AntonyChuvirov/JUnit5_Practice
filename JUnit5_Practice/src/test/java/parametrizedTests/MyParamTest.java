@@ -1,5 +1,6 @@
 package parametrizedTests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
@@ -8,6 +9,7 @@ import java.util.stream.Stream;
 
 public class MyParamTest {
     //all primitives and strings
+    @Tag("paramTest")
     @ParameterizedTest
     @ValueSource(ints = {-1, 1, 13, Integer.MAX_VALUE})
     void testValueSource(int number) {
@@ -15,6 +17,7 @@ public class MyParamTest {
     }
 
     //
+    @Tag("paramTest")
     @ParameterizedTest
     @CsvSource({"John Doe, 30",
             "Jane Doe, 25"})
@@ -23,6 +26,7 @@ public class MyParamTest {
     }
 
     //
+    @Tag("paramTest")
     @ParameterizedTest
     @MethodSource("provideValues")
     void testMethodSource(String value) {
@@ -34,6 +38,7 @@ public class MyParamTest {
     }
 
     //
+    @Tag("paramTest")
     @ParameterizedTest
     @EnumSource(value = MyEnum.class, names = {"A", "B"})
     void testEnumSource(MyEnum value) {
@@ -45,6 +50,7 @@ public class MyParamTest {
     }
 
     //
+    @Tag("paramTest")
     @ParameterizedTest
     @CsvFileSource(resources = "/data.csv")
     void testCsvFileSource(String name, int age) {
@@ -52,6 +58,7 @@ public class MyParamTest {
     }
 
     //
+    @Tag("paramTest")
     @ParameterizedTest
     @NullAndEmptySource
     void testNullAndEmptySource(String value) {
@@ -59,6 +66,7 @@ public class MyParamTest {
     }
 
     //
+    @Tag("paramTest")
     @ArgumentsSources({
             @ArgumentsSource(ArgumentsProviderImpl1.class),
             @ArgumentsSource(ArgumentsProviderImpl2.class)

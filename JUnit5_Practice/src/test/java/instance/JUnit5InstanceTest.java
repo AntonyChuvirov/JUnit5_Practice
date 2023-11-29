@@ -10,21 +10,7 @@ public class JUnit5InstanceTest extends BaseTest {
         System.out.println("Start Instance");
     }
 
-    @Test
-    @Tag("inst")
-    public void testOne(){
-
-    }
-
-    @Test
-    @Tag("inst")
-    public void testTwo(){
-
-    }
-
-    @Test
-    @Tag("inst")
-    public void testThree(){
-
-    }
+    @Test @Tag("inst") public void testOne(){}
+    @Test @Tag("inst") public void testTwo(){}
+    @Test @Tag("inst") public void testThree(){}
 }

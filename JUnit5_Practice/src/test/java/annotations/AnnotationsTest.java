@@ -2,10 +2,8 @@ package annotations;
 
 import org.junit.jupiter.api.*;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-
 public class AnnotationsTest {
+    //BeforeAll and AfterAll always have to be static
     @BeforeAll
     public static void beforeAll() {
         System.out.println("Before All method started\n");
@@ -16,12 +14,13 @@ public class AnnotationsTest {
         System.out.println("Before Each method started");
     }
 
-    @DisplayName("Some displayed name which can be a very long description")
+    @Tag("annotation")
     @Test
     public void some1Test() {
         System.out.println("Test 1 started");
     }
 
+    @Tag("annotation")
     @Test
     public void some2Test() {
         System.out.println("Test 2 started");

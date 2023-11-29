@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: suites.Suite1Test
+Test set: suites.Suite2Test
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.185 s - in suites.Suite1Test
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.185 s - in suites.Suite2Test

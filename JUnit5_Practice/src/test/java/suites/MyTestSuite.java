@@ -4,6 +4,7 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 import org.junit.platform.suite.api.SuiteDisplayName;
 
+//There are many @Select* annotations in JUnit 5
 @Suite
 @SelectClasses({
         Suite1Test.class,
@@ -11,5 +12,4 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 })
 @SuiteDisplayName("Super mega suite")
 public class MyTestSuite {
-
 }

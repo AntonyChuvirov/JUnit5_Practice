@@ -9,6 +9,8 @@
 3. Ignore test -> @Disabled
 
 4. Tags -> @Tag("1")
+    then you can run tests by tag if you have maven-surefire-plugin 'mvn test -Dgroups="1"'
+    or all test except some group mvn test -DexcludedGroups="1"
 
 5. Multiple tags -> @Tags({ @Tag("1"), @Tag("2") })
 
